@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+}
+.header{
+    background-color: #0087DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: "Exo", sans-serif;
+    color:#FFFFFF;
+    font-style: normal;
+}
+body{
+    background-color: #CCF1FF;
+    font-family: "Exo", sans-serif;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 300px;
+}
+.content {
+    display: flex;
+    gap: 40px;               
+    padding: 40px;
+    align-items: flex-start; 
+}
+
+.content-left {
+    width: 50%;
+}
+
+.content-right {
+    width: 50%;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.nav-button:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+a:visited {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.page-title{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.demonlist-container{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    width: 80%;
+    height: 70vh;
+    margin-left: 10%
+}
+.demonlist-iframe{
+    width: 100vw;
+    height: 75vh;
+}
+.second-title{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+img{
+    width: 600px;
+    margin-left: 10%;
+}
+.level-info{
+    margin: 30px;
+}
+.description{
+    padding: 30px;
+}
+@media (min-width: 320px) {
+    .hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.content-left,
+.content-right{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.level{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.demonlist-container{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.demonlist-iframe{
+    width: 100%;
+    height: 70vh;
+}
+}
+@media (min-width: 768px) {
+
+    .content{
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .content-left,
+    .content-right{
+        width: 50%;
+    }
+
+    .level{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .level-one{
+        flex-direction: row;
+    }
+
+    .level-two{
+        flex-direction: row-reverse;
+    }
+
+    img{
+        width: 100%;
+        max-width: 450px;
+    }
+}
+@media (min-width: 1200px) {
+
+    .main-content{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero{
+        padding: 80px 20px;
+        font-size: 1.4rem;
+    }
+
+    img{
+        max-width: 600px;
+    }
+
+    .demonlist-container{
+        height: 75vh;
+    }
+}
+@media (min-width: 1400px) {
+
+    .main-content{
+        max-width: 1400px;
+    }
+
+    .hero h2{
+        font-size: 2.2rem;
+    }
+
+    .content{
+        gap: 60px;
+    }
+}
